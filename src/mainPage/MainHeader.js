@@ -4,7 +4,7 @@ function MainHeader () {
     return (
         <header className="fixed-bar-box-shadow">
             <div className="fixed-bar-wrap">
-               <h1>
+               <h1 className="carrot-logo">
                     <a href="https://www.daangn.com/">
                         <img className="fixed-logo" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/base/header/logo-basic-00b7e471b721ce9db8b0758c05a84684413c8aef1ad54caa0f3fcbe7328c947f.svg" alt="carrot-icon"/>
                     </a>
