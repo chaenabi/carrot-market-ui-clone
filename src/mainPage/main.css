@@ -1,17 +1,123 @@
 .fixed-bar-box-shadow {
    display: flex;
-   background-color: hotpink;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+    padding-right: 10px;
+    background: #555555;
+}
+
+.fixed-bar-search {
+    display: flex;
 }
 
 .fixed-bar-wrap {
-
-}
-
-.fixed-bar-wrap a {
-    display: block;
-
+    flex: 0 1 100px;
+    display: flex;
+    align-items: center;
 }
 
 .fixed-logo {
+    width: 150px;
+}
+
+.search-input-wrap {
+    flex: 0 1 auto;
+    flex-basis: 600px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    padding: 10px 5px 10px 20px;
+    margin: 20px 20px;
+    width: 600px;
+    box-sizing: border-box;
+    display: flex;
 
 }
+.fixed-search-input {
+    width: 520px;
+    height: 26px;
+    font-size: 22px;
+    border: none transparent;
+    background: #555555;
+    color: coral;
+    vertical-align: bottom;
+}
+
+.fixed-search-input::placeholder {
+    color: coral;
+    transform: translateY(3px);
+}
+.fixed-search-input:focus, .fixed-search-input:active {
+    color: coral;
+    border: none transparent;
+    outline: none;
+}
+
+
+.search-input-wrap #header-search-button {
+    border: none transparent;
+    background: #555555;
+}
+
+.search-input-wrap #header-search-button:hover .fixed-search-icon {
+    filter: opacity(50%);
+}
+
+.fixed-search-icon {
+    width: 26px;
+    height: 26px;
+}
+
+.fixed-bar-download {
+    display: flex;
+}
+
+.fixed-download-button {
+    border: solid 1px #FF8A3D;
+    border-radius: 100px;
+    padding: 10px 0 10px 20px;
+    text-decoration : none;
+    width: 132px;
+    flex-grow: 1;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+}
+
+.fixed-download-button:hover {
+    border: solid 1px #FF8A3D;
+    border-radius: 100px;
+    padding: 10px 0 10px 20px;
+    text-decoration : none;
+    width: 132px;
+    flex-grow: 1;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    color: #555555;
+    background-color: #FF8A3D;
+}
+
+.fixed-download-button:hover .fixed-google-play, .fixed-download-button:hover .fixed-apple-store {
+    filter: brightness(3) invert(1);
+}
+
+.fixed-download-button:hover .fixed-download-text {
+    color: #555555;
+    background-color: #FF8A3D;
+}
+
+#header-download-button-ios {
+    flex-basis: 110px;
+}
+#header-download-button-android {
+    flex-basis: 126px;
+    margin-left: 20px;
+}
+
+.fixed-download-text {
+    color: #FF843D;
+    display: flex;
+    padding-left: 10px;
+}
+
